@@ -16,9 +16,9 @@ function SearchMovies() {
         try {
             const res = await fetch(url)
             const data = await res.json()
-            console.log(data.results, 'first log')
+            // console.log(data.results, 'first log')
             await setMovies(data.results)
-            console.log(movies, 'second log')
+            // console.log(movies, 'second log')
         } catch (error) {
             console.log(error)
         }
@@ -27,7 +27,7 @@ function SearchMovies() {
 
     useEffect(() =>{
       //  searchMovies();
-      console.log( movies, 'movies');
+      // console.log( movies, 'movies');
     }, [movies]); 
 
 
